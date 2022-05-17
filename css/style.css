@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.hidden{display: none;}
+.bg{width: 100%; height: 100vh; filter: brightness(50%); position: absolute; z-index: -1;}
+/* header */
+header{position: absolute; top: 0;}
+header .logo img{width: 50px;}
+/* main */
+.info{width: 50%; height: 100vh; position: relative; padding: 24px; box-sizing: border-box;}
+.login{position: absolute; top: 35%; left: 24px;}
+.login #greeting{font-size: 60px;}
+.login #login-form .text{width: 430px; font-size: 40px;}
+#clock{position: absolute; top: 45%;  left: 24px; font-size: 100px;}
+#weather{width: 300px; position: absolute; top: 45%; right: 0;display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+#weather .weather{font-size: 36px;}
+#weather .city{margin-top: -20px;}
+#weather img{vertical-align: middle; }
+#quote{position: absolute; top: 65%;}
+.todo{width: 50%; height: 100vh; position: absolute; top: 0; right: 0; padding: 24px; box-sizing: border-box; background: rgba(0,0,0,.2); overflow:hidden;}
+.todo #todo-form input{width: 500px; font-size: 30px;}
+.todo #todo-list li{margin-top: 10px;}
+.todo #todo-list li span{border-bottom: 1px solid #ddd; margin-left: 10px;}
+/* footer */
+.flow_text{position: absolute; bottom: 0;}
+.marquee  {
+	animation: marquee 8s linear infinite;
+	display: inline-flex;
+}
+@keyframes marquee {
+	from {transform: translateY(-100%);}
+	to{transform: translateY(0);}
+}

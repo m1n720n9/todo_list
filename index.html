@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/greetings.js" defer></script>
+    <script src="js/clock.js" defer></script>
+    <script src="js/quotes.js" defer></script>
+    <script src="js/background.js" defer></script>
+    <script src="js/todo.js" defer></script>
+    <script src="js/weather.js" defer></script>
+    <script src="js/flow.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><img src="./img/logo.png" alt="logo"></h1>
+    </header>
+    <main>
+        <div class="info">
+            <section class="login">
+                <h2 id="greeting" class="hidden"></h2>
+                <form id="login-form" class="hidden">
+                    <input class="text" type="text" required maxlength="15" placeholder="What is your name?">
+                    <input class="submit" type="submit" value="Log In">
+                </form>
+            </section>
+            <h2 id="clock">00:00:00</h2>
+            <section id="weather">
+                <img class="weatherIcon">
+                <span class="weather"></span>
+                <span class="city"></span>
+            </section>
+            <section id="quote">
+                <span></span>
+                <span></span>
+            </section>
+        </div>
+        <section class="todo">
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter" required>
+            </form>
+            <ul id="todo-list"></ul> 
+        </section>  
+    </main>
+    <footer>
+        <section class="flow_text">
+            <marquee></marquee>
+        </section>
+    </footer>
+</body>
+</html>
