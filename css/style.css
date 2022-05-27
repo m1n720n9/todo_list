@@ -7,8 +7,8 @@ header{position: absolute; top: 0;}
 header .logo img{width: 50px;}
 /* main */
 .info{width: 50%; height: 100vh; position: relative; padding: 24px; box-sizing: border-box;}
-.login{position: absolute; top: 35%; left: 24px;}
-.login #greeting{font-size: 60px;}
+.login{position: absolute; top: 35%; left: 24px; width: 100%;}
+.login #greeting{font-size: 60px; white-space: nowrap;}
 .login #login-form .text{width: 430px; font-size: 40px;}
 #clock{position: absolute; top: 45%;  left: 24px; font-size: 100px;}
 #weather{width: 300px; position: absolute; top: 45%; right: 0;display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
@@ -27,6 +27,6 @@ header .logo img{width: 50px;}
 	display: inline-flex;
 }
 @keyframes marquee {
-	from {transform: translateY(-100%);}
-	to{transform: translateY(0);}
+	from {transform: translateX(-100%);}
+	to{transform: translateX(0);}
 }
